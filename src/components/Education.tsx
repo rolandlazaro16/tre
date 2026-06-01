@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/About";
 
 export default function Education() {
   return (
-    <section id="education" className="border-y border-black/10 bg-black/5 py-24">
+    <section id="education" className="border-y border-black/10 bg-white py-24">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Education"

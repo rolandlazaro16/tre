@@ -3,7 +3,7 @@ import { profile, quickFacts, aboutParagraphs } from "@/data/portfolio";
 
 export default function About() {
   return (
-    <section id="about" className="py-24">
+    <section id="about" className="bg-white py-24">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="About Me"
@@ -36,7 +36,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-black/10 bg-black/5 p-8">
+          <div className="rounded-2xl border border-black/10 bg-white p-8">
             <h3 className="text-lg font-semibold text-black">Quick Facts</h3>
             <dl className="mt-6 space-y-4">
               {quickFacts.map((item) => (

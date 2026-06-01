@@ -22,7 +22,7 @@ const iconMap: Record<string, ReactNode> = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="bg-white py-24">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Experience & Skills"

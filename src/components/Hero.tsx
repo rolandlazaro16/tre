@@ -3,7 +3,7 @@ import { profile, heroStats } from "@/data/portfolio";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden pt-28 pb-20">
+    <section className="relative min-h-screen overflow-hidden bg-white pt-28 pb-20">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-brand-500/10 blur-3xl" />
         <div className="absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-brand-600/10 blur-3xl" />
@@ -96,7 +96,7 @@ export default function Hero() {
           {heroStats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-2xl border border-black/10 bg-black/5 p-5"
+              className="rounded-2xl border border-black/10 bg-white p-5"
             >
               <p className="text-sm text-black/60">{stat.label}</p>
               <p className="mt-1 text-lg font-semibold text-black">{stat.value}</p>

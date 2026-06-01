@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/About";
 
 export default function Contact() {
   return (
-    <section id="contact" className="border-t border-black/10 bg-black/5 py-24">
+    <section id="contact" className="border-t border-black/10 bg-white py-24">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Contact"
