@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { profile, quickFacts, aboutParagraphs } from "@/data/portfolio";
 
 export default function About() {
@@ -11,10 +12,28 @@ export default function About() {
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="space-y-5 text-black/60 leading-relaxed">
-            {aboutParagraphs.map((paragraph) => (
-              <p key={paragraph.slice(0, 32)}>{paragraph}</p>
-            ))}
+          <div className="space-y-8">
+            <div className="flex items-start gap-6">
+              <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-lg shadow-black/5 ring-2 ring-brand-500/20 sm:h-28 sm:w-28">
+                <Image
+                  src={profile.image}
+                  alt={profile.imageAlt}
+                  fill
+                  sizes="112px"
+                  className="object-cover object-[center_22%]"
+                />
+              </div>
+              <div>
+                <p className="text-lg font-semibold text-black">{profile.name}</p>
+                <p className="mt-1 text-sm text-brand-600">{profile.title}</p>
+                <p className="mt-2 text-sm text-black/50">{profile.birthplace}</p>
+              </div>
+            </div>
+            <div className="space-y-5 text-black/60 leading-relaxed">
+              {aboutParagraphs.map((paragraph) => (
+                <p key={paragraph.slice(0, 32)}>{paragraph}</p>
+              ))}
+            </div>
           </div>
 
           <div className="rounded-2xl border border-black/10 bg-black/5 p-8">
