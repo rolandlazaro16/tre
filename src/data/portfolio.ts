@@ -1,8 +1,8 @@
 export const profile = {
-  name: "Theresa Godfrey ADOLF",
+  name: "Theresa Godfrey Adolf",
   title: "Computer Science Engineer",
   image: "/images/profile.png",
-  imageAlt: "Portrait of Theresa Godfrey ADOLF, Computer Science Engineer",
+  imageAlt: "Portrait of Theresa Godfrey Adolf, Computer Science Engineer",
   birthplace: "Dar es Salaam, Tanzania",
   tagline:
     "Diploma graduate in Computer Science Engineering with hands-on experience in software and hardware maintenance, organizational network infrastructure, and a passion for graphics, business management, and software engineering.",

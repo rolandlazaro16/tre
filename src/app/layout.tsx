@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: `${profile.name} | Portfolio`,
   description: profile.tagline,
   keywords: [
-    "Theresa Godfrey ADOLF",
+    "Theresa Godfrey Adolf",
     "Computer Science Engineering",
     "Software Engineering",
     "Tanzania",

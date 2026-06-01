@@ -1,4 +1,4 @@
-# Theresa Godfrey ADOLF — Tressy Portfolio
+# Theresa Godfrey Adolf — Tressy Portfolio
 
 Personal portfolio website built with **Next.js** and **TypeScript**.
 
