@@ -1,8 +1,22 @@
+function capitalizeWord(value: string) {
+  const trimmed = value.trim();
+  if (!trimmed) return trimmed;
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase();
+}
+
+const nameParts = {
+  firstName: "Theresa",
+  middleName: "Godfrey",
+  lastName: "Adolf",
+} as const;
+
+const fullName = `${nameParts.firstName} ${nameParts.middleName} ${capitalizeWord(nameParts.lastName)}`;
+
 export const profile = {
-  name: "Theresa Godfrey Adolf",
+  name: fullName,
   title: "Computer Science Engineer",
   image: "/images/profile.png",
-  imageAlt: "Portrait of Theresa Godfrey Adolf, Computer Science Engineer",
+  imageAlt: `Portrait of ${fullName}, Computer Science Engineer`,
   birthplace: "Dar es Salaam, Tanzania",
   tagline:
     "Diploma graduate in Computer Science Engineering with hands-on experience in software and hardware maintenance, organizational network infrastructure, and a passion for graphics, business management, and software engineering.",
