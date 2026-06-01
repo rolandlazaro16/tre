@@ -14,7 +14,7 @@ export default function About() {
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           <div className="space-y-8">
             <div className="flex items-start gap-6">
-              <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-lg shadow-black/5 ring-2 ring-brand-500/20 sm:h-28 sm:w-28">
+              <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-lg shadow-black/5 ring-2 ring-brand-600/30 sm:h-28 sm:w-28">
                 <Image
                   src={profile.image}
                   alt={profile.imageAlt}

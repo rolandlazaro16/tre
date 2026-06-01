@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-white pt-28 pb-20">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-brand-500/10 blur-3xl" />
-        <div className="absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-brand-600/10 blur-3xl" />
+        <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-brand-600/5 blur-3xl" />
+        <div className="absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-brand-600/5 blur-3xl" />
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -20,14 +20,14 @@ export default function Hero() {
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_minmax(280px,360px)] lg:gap-16">
           <div className="order-2 max-w-3xl animate-fade-in lg:order-1">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-50 px-4 py-1.5 text-sm text-brand-700">
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-black/15 bg-white px-4 py-1.5 text-sm text-black/70">
               <span className="h-2 w-2 rounded-full bg-brand-600 animate-pulse" />
               Born in {profile.birthplace}
             </p>
 
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-black sm:text-5xl lg:text-6xl">
               Hi, I&apos;m{" "}
-              <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent">
+              <span className="text-brand-600">
                 {profile.name}
               </span>
             </h1>
@@ -52,7 +52,7 @@ export default function Hero() {
               </a>
               <a
                 href="#skills"
-                className="inline-flex items-center gap-2 rounded-full border border-black/20 px-7 py-3.5 text-sm font-semibold text-black transition hover:border-brand-500 hover:bg-brand-50"
+                className="inline-flex items-center gap-2 rounded-full border border-black/20 bg-white px-7 py-3.5 text-sm font-semibold text-black transition hover:border-brand-600 hover:bg-black/[0.03]"
               >
                 View my skills
               </a>
@@ -65,7 +65,7 @@ export default function Hero() {
           >
             <div className="relative w-full max-w-[320px] sm:max-w-[360px]">
               <div
-                className="pointer-events-none absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-brand-400/30 via-brand-500/20 to-brand-700/25 blur-md"
+                className="pointer-events-none absolute -inset-4 rounded-[2rem] bg-brand-600/10 blur-md"
                 aria-hidden
               />
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/90 bg-white shadow-2xl shadow-black/10 ring-1 ring-black/[0.06]">

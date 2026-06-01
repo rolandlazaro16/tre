@@ -34,9 +34,9 @@ export default function Skills() {
           {skills.map((skill) => (
             <article
               key={skill.name}
-              className="group rounded-2xl border border-black/10 bg-white p-7 transition hover:border-brand-500/40 hover:bg-brand-50/50"
+              className="group rounded-2xl border border-black/10 bg-white p-7 transition hover:border-brand-600"
             >
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-brand-100 text-brand-600 transition group-hover:bg-brand-200 group-hover:text-brand-700">
+              <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-black/10 bg-white text-brand-600 transition group-hover:border-brand-600">
                 {iconMap[skill.icon]}
               </div>
               <h3 className="mt-5 text-lg font-semibold text-black">{skill.name}</h3>
@@ -55,7 +55,7 @@ export default function Skills() {
             {experienceItems.map((item) => (
               <article
                 key={item.title}
-                className="rounded-2xl border border-brand-500/30 bg-brand-50 p-6 sm:p-7"
+                className="rounded-2xl border border-brand-600 bg-white p-6 sm:p-7"
               >
                 <h3 className="text-lg font-bold text-black">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-black/60">

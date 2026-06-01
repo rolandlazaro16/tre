@@ -12,7 +12,7 @@ export default function Education() {
         />
 
         <div className="relative mt-14">
-          <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-brand-600 via-brand-400/50 to-transparent md:left-1/2 md:block md:-translate-x-px" />
+          <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-brand-600 via-black/20 to-transparent md:left-1/2 md:block md:-translate-x-px" />
 
           <ol className="space-y-8">
             {education.map((item, index) => (
@@ -29,13 +29,13 @@ export default function Education() {
                   }`}
                 >
                   <article
-                    className={`rounded-2xl border p-6 transition hover:border-brand-500/40 ${
+                    className={`rounded-2xl border bg-white p-6 transition hover:border-brand-600 ${
                       "highlight" in item && item.highlight
-                        ? "border-brand-500/50 bg-brand-50 shadow-lg shadow-brand-500/10"
-                        : "border-black/10 bg-white"
+                        ? "border-brand-600 shadow-lg shadow-black/5"
+                        : "border-black/10"
                     }`}
                   >
-                    <span className="inline-block rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700">
+                    <span className="inline-block rounded-full border border-brand-600 px-3 py-1 text-xs font-semibold text-brand-600">
                       {item.level}
                     </span>
                     <h3 className="mt-3 text-lg font-semibold text-black">
